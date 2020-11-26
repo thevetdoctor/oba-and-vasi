@@ -11,11 +11,19 @@
     <h1 id="title">ObaVasi Survey!</h1>
     <div id="description">We are creating a survey form to get the satisfaction rate of customers on our products</div>
     <form action="" id="survey-form" >
-      <input type="text" name="name" id="name">
-      <input type="email" name="email" id="email">
-      <input type="number" id="number">
+      <div>
+        <label id="name-label"></label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div>
+        <label id="email-label"></label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div>
+        <label id="number-label"></label>
+        <input type="number" id="number" min=20 max=50>
+      </div>
       <input type=submit id="submit">
-      
     </form>
     <!--
 
