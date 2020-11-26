@@ -3,27 +3,50 @@
   <head>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <h1 id="title">ObaVasi Survey!</h1>
-    <div id="description">We are creating a survey form to get the satisfaction rate of customers on our products</div>
+    <p id="description">We are creating a survey form to get the satisfaction rate of customers on our products</p>
     <form action="" id="survey-form" >
       <div>
-        <label id="name-label"></label>
-        <input type="text" name="name" id="name" placeholder="Type your name">
+        <label id="name-label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Type your name" required>
       </div>
       <div>
-        <label id="email-label"></label>
-        <input type="email" name="email" id="email" placeholder="Type your email">
+        <label id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Type your email" required>
       </div>
       <div>
-        <label id="number-label"></label>
+        <label id="number-label">Chosen Grade</label>
         <input type="number" id="number" min=20 max=50 placeholder="choose an number">
       </div>
-      <select name="" id="dropdown"></select>
+      <select name="" id="dropdown">
+        <option value="option 1">Option 1</option>
+        <option value="option 2">Option 2</option>
+        <option value="option 3">Option 3</option>
+      </select>
+      <div class="radio">
+        <input name="radio1" type="radio" value="1">
+        <input name="radio1" type="radio" value="2">
+      </div>
+      <div>
+        <input name="radio2" type="radio" value="5">
+        <input name="radio2" type="radio" value="8">
+      </div>
+
+      <div>
+        <input type="checkbox" value="White">
+        <label for="white">I am White</label><br>
+        <input type="checkbox" value="Black">
+        <label for="black">I am Black</label><br>
+        <input type="checkbox" value="Caucasian">
+        <label for="caucasian">I am Caucasian</label>
+      </div>
+
+      <textarea></textarea>
       <input type=submit id="submit">
       
     </form>
